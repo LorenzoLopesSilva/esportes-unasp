@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="noticias.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabeça">
+        <nav>
+            <a class="nav1" href="index.html">Home</a>
+            <a class="nav1" href="noticias.html">Noticias</a>
+            <a class="nav1" href="enventos.html">Eventos</a>
+            <a class="nav1" href="galeria.html">Fotos e videos</a>
+            <a class="nav1" href="suporte.html">Contato e feedback</a>
+            <input type="text" placeholder="Pesquise a noticia" class="pesquisa">
+        </nav>
+    </header>
+    
+    <div class="div1">
+        <h2>Noticias</h2>
+    </div>
+    <div class="div2">
+        <h2>Categorias de Esportes</h2>
+    </div>
+
+    <div class="esporte-container">
+    <a href="volei.html"><div class="esporte" id="volei">
+        <img class="img-esporte" src="https://cdn-icons-png.flaticon.com/512/184/184940.png" alt="">
+    </div></a>   
+    <a href="basquete.html"><div class="esporte" id="basquete">
+        <img class="img-esporte" src="https://cdn-icons-png.flaticon.com/512/3349/3349343.png" alt="">
+    </div></a>
+    <a href="handebol.html"><div class="esporte" id="handebol">
+        <img class="img-esporte" src="https://cdn-icons-png.flaticon.com/512/5178/5178733.png" alt="">
+    </div></a>
+    <a href="futsal.html"><div class="esporte" id="futebol">
+        <img class="img-esporte" src="https://cdn-icons-png.flaticon.com/512/33/33736.png" alt="">
+    </div></a>
+    <a href="ping-pong.html"><div class="esporte" id="ping-pong">
+        <img class="img-esporte" src="https://cdn-icons-png.flaticon.com/512/147/147340.png" alt="">
+    </div></a>
+    
+    
+    </div>
+    <script>
+        var volei = document.querySelector('#volei')
+        var basquete = document.querySelector('#basquete')
+        var futebol = document.querySelector('#futebol')
+        var handebol = document.querySelector('#handebol')
+        var ping_pong = document.querySelector('#ping-pong')
+ 
+        volei.addEventListener('mouseenter', entrarV)
+        volei.addEventListener('mouseout', sairV)
+ 
+        basquete.addEventListener('mouseenter', entrarB)
+        basquete.addEventListener('mouseout', sairB)
+ 
+        futebol.addEventListener('mouseenter', entrarF)
+        futebol.addEventListener('mouseout', sairF)
+ 
+        handebol.addEventListener('mouseenter', entrarH)
+        handebol.addEventListener('mouseout', sairH)
+ 
+        ping_pong.addEventListener('mouseenter', entrarP)
+        ping_pong.addEventListener('mouseout', sairP)
+ 
+        function entrarV(){
+         volei.style.background = 'white'
+        }
+        function sairV(){
+         volei.style.background = 'blue'
+        }
+        function entrarB(){
+         basquete.style.background = 'red'
+        }
+        function sairB(){
+         basquete.style.background = 'blue'
+        }
+        function entrarF(){
+         futebol.style.background = 'gray'
+        }
+        function sairF(){
+         futebol.style.background = 'blue'
+        }
+        function entrarH(){
+         handebol.style.background = 'green'
+        }
+        function sairH(){
+         handebol.style.background = 'blue'
+        }
+        function entrarP(){
+         ping_pong.style.background = 'purple'
+        }
+        function sairP(){
+         ping_pong.style.background = 'blue'
+        }
+     </script>
+
+    <div class="div2">
+        <h2>Noticias Gerais</h2>
+    </div>
+    <div class="noticias-geral">
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53303703448_1aa1767593_b.jpg" alt="">
+        <p class="p-noticia">O Olimpiasp COMEÇOU!</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53303458641_d183282ea5_b.jpg" alt="">
+        <p class="p-noticia">Masculino: Veja mais sobre o jogo Funcionarios x Terceirão</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53303458831_e78755933a_b.jpg" alt="">
+        <p class="p-noticia">Feminino: Veja mais sobre o jogo Funcionarias x Terceirão</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53316447791_d7704a503d_b.jpg" alt="">
+        <p class="p-noticia">Derrota do Terceirão: 2ºB Natureza ganha ouro no volei</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53316691263_f4462a4673_b.jpg" alt="">
+        <p class="p-noticia">3ºTIB levam ouro no basquete e no futsal masculino</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53315579357_bb559435f0_b.jpg" alt="">
+        <p class="p-noticia">No handebol masculino o ouro é deles: 3ºTIA</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53316442056_1c343127da_b.jpg" alt="">
+        <p class="p-noticia">Veja os medalhistas do tenis de mesa</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53316685653_5b5aea9442_b.jpg" alt="">
+        <p class="p-noticia">Veja a equipe por trás do evento Olimpiasp</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53316396876_aae1052b01_b.jpg" alt="">
+        <p class="p-noticia">Veja mais sobre o basquete masculino no Olimpiasp 2023</p>
+        </div>
+    </div>
+    <div class="noticia-container">
+        <div class="noticia">
+        <img class="noticia-img" src="https://live.staticflickr.com/65535/53303459521_582100d609_b.jpg" alt="">
+        <p class="p-noticia">Confira tudo sobre a abertura do Olimpiasp Ensino Medio 2023</p>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <nav>
+          <a class="navF" href="index.html">Home</a>
+          <a class="navF" href="noticias.html">Noticias</a>
+          <a class="navF" href="enventos.html">Eventos</a>
+          <a class="navF" href="galeria.html">Fotos e videos</a>
+          <a class="navF" href="suporte.html">Contato e feedback</a>
+      </nav>
+      </footer>
+</body>
+</html>
